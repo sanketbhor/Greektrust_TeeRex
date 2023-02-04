@@ -1,0 +1,116 @@
+.product-listing {
+    display: flex;
+    margin-top: 10vh;
+    height: 35rem;
+}
+
+.search{
+    position: fixed;
+    top: 0;
+}
+
+.filter-desktop {
+    display: none !important;
+}
+
+.filter-mobile {
+    display: block !important;
+}
+
+.product-desktop {
+    width: 100%;
+}
+
+.header-product{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    padding-right: 0;
+    background: #eeeeee;
+    font-size: large;
+}
+.header-cart{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    padding-right: 0;
+    background: #eeeeee;
+    font-size: large;
+}
+.header-title{
+    cursor: pointer;
+}
+.header-actions{
+    display: flex;
+    width: 25ch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.line{
+    height: 1.75px;
+    background: black;
+    width: 3.5rem;
+    margin-top: 5px;
+}
+#shoppingButton{
+    color: black;
+    padding: 0.5rem;
+    background-color: rgb(193, 198, 198);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.hidden{
+    display: none !important;
+}
+.image-container {
+    max-height: 8rem;
+    max-width: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hidden{
+        display: block !important;
+    }
+    .filter-desktop {
+        display: block !important;
+        width: 15%;
+        position: relative;
+        top: 5rem;
+        left: 6rem;
+        padding: 1rem;
+    }
+
+    .filter-mobile {
+        display: none !important;
+    }
+
+    .product-desktop {
+        width: 85%;
+        position: relative;
+        left: 6rem;
+        top: 2rem;
+    }
+}
+
+/* @media only screen and (min-width: 600px) and (max-width:992px) {
+    .contentDiv >.product_list_div{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+   }
+   .check_box > input{
+  margin-left: -70%;
+   }
+   .check_box > label{
+    font-size: 15px;
+   }
+   .checkBoxDiv{
+    width: 100%;
+   }
+   .checkBoxDiv>h4{
+    font-size: 19px;
+   }
+  } */
